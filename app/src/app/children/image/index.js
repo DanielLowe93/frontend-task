@@ -1,12 +1,17 @@
-import React from 'react'
-import styles from './styles';
+import React from 'react';
+import { createUseStyles } from 'react-jss'
 import { getCaptionFromEdges } from '../../../utils/getCaptionFromEdges';
+import styles from './styles';
+
+const useStyles = createUseStyles(styles);
 
 const Image = ({ data }) => {
+  const classes = useStyles();
+
   return (
     <img
       src={data.display_url}
-      style={styles}
+      className={classes.image}
       alt={getCaptionFromEdges(data.edge_media_to_caption)}
     />
   )
