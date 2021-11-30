@@ -1,5 +1,5 @@
 import React from 'react';
-import { createUseStyles } from 'react-jss'
+import { createUseStyles } from 'react-jss';
 import LikeButton from '../../../like_button';
 import { formatCommentIntoHTML } from '../../../../../utils/formatCommentIntoHTML';
 import styles from './styles';
