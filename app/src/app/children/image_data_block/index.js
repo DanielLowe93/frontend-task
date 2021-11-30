@@ -18,7 +18,7 @@ const ImageDataBlock = ({ takenTimestamp, likeCount }) => {
     <div className={classes.imageData}>
       <div className={classes.dataHolder}>
         <strong>{`${likeCount.toLocaleString()} likes`}</strong>
-        <small>{formattedDate}</small>
+        <small className={classes.smallText}>{formattedDate}</small>
       </div>
 
       <div className={classes.likeButton}>

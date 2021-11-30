@@ -7,7 +7,7 @@ const styles = {
 
   commentHolder: {
     margin: 0,
-    flex: '1 0 90%',
+    flex: '1 0 80%',
   },
 
   commentUsername: {
@@ -16,6 +16,7 @@ const styles = {
 
   commentText: {
     whiteSpace: 'pre-line',
+    marginRight: '16px',
   },
 }
 

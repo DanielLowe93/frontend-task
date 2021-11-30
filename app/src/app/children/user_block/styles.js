@@ -4,7 +4,7 @@ const styles = {
     alignItems: 'center',
     borderBottom: '1px solid #e6e6e6',
     margin: '0 16px',
-    padding: '16px 0',
+    height: '80px',
   },
 
   userText: {

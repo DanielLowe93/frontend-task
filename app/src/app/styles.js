@@ -5,7 +5,7 @@ const styles = {
     borderBottomRightRadius: '3px',
     borderTopRightRadius: '3px',
     maxWidth: '935px',
-    maxHeight: '455px',
+    maxHeight: '454px',
     margin: '32px auto',
     width: 'calc(100% - 40px)',
     display: 'flex',

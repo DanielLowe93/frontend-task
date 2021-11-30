@@ -3,7 +3,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     padding: '0 16px',
-    height: 'calc(100% - 123px)',
+    height: 'calc(100% - 120px)',
     overflow: 'auto',
   },
 
