@@ -17,6 +17,7 @@ const CommentBlock = ({ data }) => (
 
     {data.edge_media_to_comment.edges.map((edge) => (
       <Comment
+        key={edge.node.id}
         user={getUserFromCommentEdge(edge)}
         comment={getCommentFromCommentEdge(edge)}
       />
