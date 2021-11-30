@@ -1,8 +1,9 @@
-import React from 'react'
-import Image from './children/image'
-import LikeButton from './children/like_button'
-import UserBlock from './children/user_block'
-import styles from './styles'
+import React from 'react';
+import CommentBlock from './children/comments_block';
+import Image from './children/image';
+import LikeButton from './children/like_button';
+import UserBlock from './children/user_block';
+import styles from './styles';
 
 const App = ({ data }) => {
   return (
@@ -12,11 +13,11 @@ const App = ({ data }) => {
       </div>
       <div style={styles.text}>
         <UserBlock owner={data.owner} location={data.location} />
-        <p>Comments block</p>
+        <CommentBlock data={data} />
         <LikeButton />
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;

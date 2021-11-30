@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './styles'
-import {getCaptionFromEdges} from './helpers'
+import styles from './styles';
+import { getCaptionFromEdges } from '../../../utils/getCaptionFromEdges';
 
 const Image = ({ data }) => {
   return (
