@@ -2,8 +2,7 @@ import React from 'react'
 import styles from './styles'
 import {getCaptionFromEdges} from './helpers'
 
-const Image = (props) => {
-  const {data} = props
+const Image = ({ data }) => {
   return (
     <img
       src={data.display_url}
