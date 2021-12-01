@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { createUseStyles } from 'react-jss';
-import CommentBlock from './children/comments_block';
-import Image from './children/image';
-import UserBlock from './children/user_block';
-import ImageDataBlock from './children/image_data_block';
-import styles from './styles';
+import React, { useState } from 'react'
+import { createUseStyles } from 'react-jss'
+import CommentBlock from './children/comments_block'
+import Image from './children/image'
+import UserBlock from './children/user_block'
+import ImageDataBlock from './children/image_data_block'
+import styles from './styles'
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(styles)
 
 const App = ({ data }) => {
-  const classes = useStyles();
-  const [likeCount, setLikeCount] = useState(data.edge_media_preview_like.count);
+  const classes = useStyles()
+  const [likeCount, setLikeCount] = useState(data.edge_media_preview_like.count)
 
   return (
-    <main className={classes.main} data-testid="app-main">
+    <main className={classes.main} data-testid='app-main'>
       <div className={classes.image}>
         <Image data={data} />
       </div>
@@ -27,7 +27,7 @@ const App = ({ data }) => {
         />
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default App;
+export default App

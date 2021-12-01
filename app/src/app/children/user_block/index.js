@@ -1,19 +1,19 @@
-import React from 'react';
-import { createUseStyles } from 'react-jss';
-import styles from './styles';
+import React from 'react'
+import { createUseStyles } from 'react-jss'
+import styles from './styles'
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(styles)
 
 const UserBlock = ({ owner, location }) => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.userBlock}>
       <img
-        data-testid="users-image"
+        data-testid='users-image'
         src={owner.profile_pic_url}
-        width="51px"
-        height="50px"
+        width='51px'
+        height='50px'
         alt={`${owner.full_name} profile`}
       />
       <div className={classes.userText}>
@@ -21,7 +21,7 @@ const UserBlock = ({ owner, location }) => {
         <small>{location.name}</small>
       </div>
     </div>
-  );
+  )
 }
 
-export default UserBlock;
+export default UserBlock

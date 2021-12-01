@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 import { createUseStyles } from 'react-jss'
-import { getCaptionFromEdges } from '../../../utils/getCaptionFromEdges';
-import { getUserFromCommentEdge } from '../../../utils/getUserFromCommentEdge';
-import { getCommentFromCommentEdge } from '../../../utils/getCommentFromCommentEdge';
-import Comment from './children/comment';
-import styles from './styles';
+import { getCaptionFromEdges } from '../../../utils/getCaptionFromEdges'
+import { getUserFromCommentEdge } from '../../../utils/getUserFromCommentEdge'
+import { getCommentFromCommentEdge } from '../../../utils/getCommentFromCommentEdge'
+import Comment from './children/comment'
+import styles from './styles'
 
-const useStyles = createUseStyles(styles);
+const useStyles = createUseStyles(styles)
 
 const CommentBlock = ({ data }) => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.commentBlock}>
@@ -17,7 +17,7 @@ const CommentBlock = ({ data }) => {
         <Comment
           user={data.owner.username}
           comment={getCaptionFromEdges(data.edge_media_to_caption)}
-          removeLikeButton={true}
+          removeLikeButton
         />
       </div>
 
@@ -29,7 +29,7 @@ const CommentBlock = ({ data }) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default CommentBlock;
+export default CommentBlock

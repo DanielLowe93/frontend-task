@@ -2,8 +2,8 @@ const styles = {
   button: {
     background: 'none',
     border: 'none',
-    cursor: 'pointer',
+    cursor: 'pointer'
   }
-};
+}
 
-export default styles;
+export default styles

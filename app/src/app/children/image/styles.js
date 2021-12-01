@@ -1,8 +1,8 @@
 const styles = {
   image: {
     width: '100%',
-    display: 'block',
+    display: 'block'
   }
 }
 
-export default styles;
+export default styles

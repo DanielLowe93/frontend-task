@@ -12,14 +12,14 @@ const styles = {
 
     '@media only screen and (max-width: 768px)': {
       maxHeight: 'fit-content',
-      flexDirection: 'column',
-    },
+      flexDirection: 'column'
+    }
   },
 
   image: {
     flex: '1 0 60%',
     padding: '40px 0',
-    backgroundColor: '#fafafa',
+    backgroundColor: '#fafafa'
   },
 
   text: {
@@ -27,9 +27,9 @@ const styles = {
 
     '@media only screen and (max-width: 768px)': {
       flex: '1 0 0',
-      height: '384px',
-    },
+      height: '384px'
+    }
   }
 }
 
-export default styles;
+export default styles

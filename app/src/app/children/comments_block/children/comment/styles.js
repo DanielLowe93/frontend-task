@@ -2,23 +2,22 @@ const styles = {
   comment: {
     display: 'flex',
     alignItems: 'center',
-    marginTop: '4px',
+    marginTop: '4px'
   },
 
   commentHolder: {
     margin: 0,
-    flex: '1 0 80%',
+    flex: '1 0 80%'
   },
 
   commentUsername: {
-    marginRight: '4px',
+    marginRight: '4px'
   },
 
   commentText: {
     whiteSpace: 'pre-line',
-    marginRight: '16px',
-  },
+    marginRight: '16px'
+  }
 }
 
-export default styles;
-
+export default styles
