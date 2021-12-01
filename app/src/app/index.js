@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import CommentBlock from './children/comments_block';
 import Image from './children/image';
@@ -10,6 +10,7 @@ const useStyles = createUseStyles(styles);
 
 const App = ({ data }) => {
   const classes = useStyles();
+  const [likeCount, setLikeCount] = useState(data.edge_media_preview_like.count);
 
   return (
     <main className={classes.main}>
@@ -21,7 +22,8 @@ const App = ({ data }) => {
         <CommentBlock data={data} />
         <ImageDataBlock
           takenTimestamp={data.taken_at_timestamp}
-          likeCount={data.edge_media_preview_like.count}
+          likeCount={likeCount}
+          setLikeCount={setLikeCount}
         />
       </div>
     </main>

@@ -8,7 +8,7 @@ import styles from './styles';
 dayjs.extend(relativeTime);
 const useStyles = createUseStyles(styles);
 
-const ImageDataBlock = ({ takenTimestamp, likeCount }) => {
+const ImageDataBlock = ({ takenTimestamp, likeCount, setLikeCount }) => {
   const classes = useStyles();
 
   const dateFourDaysAfter = dayjs.unix(takenTimestamp).add(4, 'days');
@@ -22,7 +22,7 @@ const ImageDataBlock = ({ takenTimestamp, likeCount }) => {
       </div>
 
       <div className={classes.likeButton}>
-        <LikeButton />
+        <LikeButton setLikeCount={setLikeCount} likeCount={likeCount} />
       </div>
     </div>
   );
