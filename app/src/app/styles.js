@@ -9,6 +9,11 @@ const styles = {
     margin: '32px auto',
     width: 'calc(100% - 40px)',
     display: 'flex',
+
+    '@media only screen and (max-width: 768px)': {
+      maxHeight: 'fit-content',
+      flexDirection: 'column',
+    },
   },
 
   image: {
@@ -19,6 +24,11 @@ const styles = {
 
   text: {
     flex: '1 0 40%',
+
+    '@media only screen and (max-width: 768px)': {
+      flex: '1 0 0',
+      height: '384px',
+    },
   }
 }
 
