@@ -10,6 +10,7 @@ const UserBlock = ({ owner, location }) => {
   return (
     <div className={classes.userBlock}>
       <img
+        data-testid="users-image"
         src={owner.profile_pic_url}
         width="51px"
         height="50px"

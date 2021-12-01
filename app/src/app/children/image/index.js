@@ -10,6 +10,7 @@ const Image = ({ data }) => {
 
   return (
     <img
+      data-testid="image"
       src={data.display_url}
       className={classes.image}
       alt={getCaptionFromEdges(data.edge_media_to_caption)}

@@ -13,7 +13,7 @@ const App = ({ data }) => {
   const [likeCount, setLikeCount] = useState(data.edge_media_preview_like.count);
 
   return (
-    <main className={classes.main}>
+    <main className={classes.main} data-testid="app-main">
       <div className={classes.image}>
         <Image data={data} />
       </div>

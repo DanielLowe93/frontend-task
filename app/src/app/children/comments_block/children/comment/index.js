@@ -10,7 +10,7 @@ const Comment = ({ user, comment, removeLikeButton }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.comment}>
+    <div className={classes.comment} data-testid="comment">
       <p className={classes.commentHolder}>
         <strong className={classes.commentUsername}>{user}</strong>
         <span className={classes.commentText} dangerouslySetInnerHTML={formatCommentIntoHTML(comment)} />

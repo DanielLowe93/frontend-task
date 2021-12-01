@@ -20,7 +20,7 @@ const LikeButton = ({ height, likeCount, setLikeCount }) => {
   };
 
   return (
-    <button className={classes.button} type="button" onClick={toggleButtonActive} aria-label="Like Button">
+    <button data-testid="like-button" className={classes.button} type="button" onClick={toggleButtonActive} aria-label="Like Button">
       {buttonActive ? (
         <LikedIcon height={height} />
       ) : (
