@@ -22,7 +22,8 @@
     "env": [ "jest" ],
     "globals": [
       "it",
-      "expect"
+      "expect",
+      "fetch"
     ]
   },
   "browserslist": [
